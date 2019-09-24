@@ -5,6 +5,8 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.model.Firematch
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         val display = resources.displayMetrics
         Log.d(tag, "Width: " +  display.widthPixels) // 1080
         Log.d(tag, "Height: " + display.heightPixels) // 1998
+
+        val firematch = Firematch(h00, 0, 0)
+        firematch.imageView.setImageResource(R.drawable.horizontal_dotted_red)
     }
 
     fun h1Clicked(view: View) {
