@@ -10,7 +10,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val tag = "Main_Activity"
+    private val tag = "Main_Activity"
+
+    var firematches = ArrayList<Firematch>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +21,6 @@ class MainActivity : AppCompatActivity() {
         val display = resources.displayMetrics
         Log.d(tag, "Width: " +  display.widthPixels) // 1080
         Log.d(tag, "Height: " + display.heightPixels) // 1998
-
-        val firematch = Firematch(h00, 0, 0)
-        firematch.imageView.setImageResource(R.drawable.horizontal_dotted_red)
     }
 
     fun h1Clicked(view: View) {
@@ -38,5 +37,10 @@ class MainActivity : AppCompatActivity() {
 
     fun h4Clicked(view: View) {
         Toast.makeText(this, "h4 is clicked", Toast.LENGTH_SHORT).show()
+    }
+
+    fun addFireMatches()  {
+//        firematch.imageView.setImageResource(R.drawable.horizontal_dotted_red)
+
     }
 }

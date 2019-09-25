@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/h00"
+        android:id="@+id/h40"
         android:layout_marginStart="30dp"
         android:layout_width="60dp"
         android:layout_height="5dp"
@@ -18,253 +18,81 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/h01"
+        android:id="@+id/h41"
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
         android:onClick="h2Clicked"
         android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@id/h00"
+        app:layout_constraintLeft_toRightOf="@id/h40"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/h02"
+        android:id="@+id/h42"
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
         android:onClick="h3Clicked"
         android:src="@drawable/horizontal_dotted"
-        app:layout_constraintRight_toLeftOf="@id/h03"
-        app:layout_constraintLeft_toRightOf="@id/h01"
+        app:layout_constraintRight_toLeftOf="@id/h43"
+        app:layout_constraintLeft_toRightOf="@id/h41"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/h03"
+        android:id="@+id/h43"
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
         android:onClick="h4Clicked"
         android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@id/h02"
+        app:layout_constraintLeft_toRightOf="@id/h42"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
-        android:id="@+id/v00"
+        android:id="@+id/v30"
         android:layout_marginStart="30dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h00" />
+        app:layout_constraintTop_toBottomOf="@id/h40" />
 
     <ImageView
-        android:id="@+id/v01"
+        android:id="@+id/v31"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v00"
-        app:layout_constraintTop_toBottomOf="@id/h01" />
+        app:layout_constraintLeft_toRightOf="@id/v30"
+        app:layout_constraintTop_toBottomOf="@id/h41" />
 
     <ImageView
-        android:id="@+id/v02"
+        android:id="@+id/v32"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v01"
-        app:layout_constraintTop_toBottomOf="@id/h02" />
+        app:layout_constraintLeft_toRightOf="@id/v31"
+        app:layout_constraintTop_toBottomOf="@id/h42" />
 
     <ImageView
-        android:id="@+id/v03"
+        android:id="@+id/v33"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v02"
-        app:layout_constraintTop_toBottomOf="@id/h03" />
+        app:layout_constraintLeft_toRightOf="@id/v32"
+        app:layout_constraintTop_toBottomOf="@id/h43" />
 
     <ImageView
-        android:id="@+id/v04"
+        android:id="@+id/v34"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v03"
-        app:layout_constraintTop_toBottomOf="@id/h03" />
-
-    <ImageView
-        android:id="@+id/h10"
-        android:layout_marginStart="30dp"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v00" />
-
-    <ImageView
-        android:id="@+id/h11"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h10"
-        app:layout_constraintTop_toBottomOf="@+id/v01" />
-
-    <ImageView
-        android:id="@+id/h12"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h11"
-        app:layout_constraintTop_toBottomOf="@+id/v02" />
-
-    <ImageView
-        android:id="@+id/h13"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h12"
-        app:layout_constraintTop_toBottomOf="@+id/v03" />
-
-    <ImageView
-        android:id="@+id/v10"
-        android:layout_marginStart="30dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h10" />
-
-    <ImageView
-        android:id="@+id/v11"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v10"
-        app:layout_constraintTop_toBottomOf="@id/h11" />
-
-    <ImageView
-        android:id="@+id/v12"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v11"
-        app:layout_constraintTop_toBottomOf="@id/h12" />
-
-    <ImageView
-        android:id="@+id/v13"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v12"
-        app:layout_constraintTop_toBottomOf="@id/h13" />
-
-    <ImageView
-        android:id="@+id/v14"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v13"
-        app:layout_constraintTop_toBottomOf="@id/h13" />
-
-    <ImageView
-        android:id="@+id/h20"
-        android:layout_marginStart="30dp"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v10" />
-
-    <ImageView
-        android:id="@+id/h21"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h20"
-        app:layout_constraintTop_toBottomOf="@+id/v11" />
-
-    <ImageView
-        android:id="@+id/h22"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h21"
-        app:layout_constraintTop_toBottomOf="@+id/v12" />
-
-    <ImageView
-        android:id="@+id/h23"
-        android:layout_width="60dp"
-        android:layout_height="5dp"
-        android:layerType="software"
-        android:onClick="h1Clicked"
-        android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h22"
-        app:layout_constraintTop_toBottomOf="@+id/v13" />
-
-    <ImageView
-        android:id="@+id/v20"
-        android:layout_marginStart="30dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/h20" />
-
-    <ImageView
-        android:id="@+id/v21"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v20"
-        app:layout_constraintTop_toBottomOf="@id/h21" />
-
-    <ImageView
-        android:id="@+id/v22"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v21"
-        app:layout_constraintTop_toBottomOf="@id/h22" />
-
-    <ImageView
-        android:id="@+id/v23"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v22"
-        app:layout_constraintTop_toBottomOf="@id/h23" />
-
-    <ImageView
-        android:id="@+id/v24"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
-        android:layout_height="60dp"
-        android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v23"
-        app:layout_constraintTop_toBottomOf="@id/h23" />
+        app:layout_constraintLeft_toRightOf="@id/v33"
+        app:layout_constraintTop_toBottomOf="@id/h43" />
 
     <ImageView
         android:id="@+id/h30"
@@ -275,7 +103,7 @@
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v20" />
+        app:layout_constraintTop_toBottomOf="@+id/v30" />
 
     <ImageView
         android:id="@+id/h31"
@@ -285,7 +113,7 @@
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/h30"
-        app:layout_constraintTop_toBottomOf="@+id/v21" />
+        app:layout_constraintTop_toBottomOf="@+id/v31" />
 
     <ImageView
         android:id="@+id/h32"
@@ -295,7 +123,7 @@
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/h31"
-        app:layout_constraintTop_toBottomOf="@+id/v22" />
+        app:layout_constraintTop_toBottomOf="@+id/v32" />
 
     <ImageView
         android:id="@+id/h33"
@@ -305,10 +133,10 @@
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/h32"
-        app:layout_constraintTop_toBottomOf="@+id/v23" />
+        app:layout_constraintTop_toBottomOf="@+id/v33" />
 
     <ImageView
-        android:id="@+id/v30"
+        android:id="@+id/v20"
         android:layout_marginStart="30dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
@@ -317,44 +145,43 @@
         app:layout_constraintTop_toBottomOf="@id/h30" />
 
     <ImageView
-        android:id="@+id/v31"
+        android:id="@+id/v21"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v30"
+        app:layout_constraintLeft_toRightOf="@id/v20"
         app:layout_constraintTop_toBottomOf="@id/h31" />
 
     <ImageView
-        android:id="@+id/v32"
+        android:id="@+id/v22"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v31"
+        app:layout_constraintLeft_toRightOf="@id/v21"
         app:layout_constraintTop_toBottomOf="@id/h32" />
 
     <ImageView
-        android:id="@+id/v33"
+        android:id="@+id/v23"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v32"
+        app:layout_constraintLeft_toRightOf="@id/v22"
         app:layout_constraintTop_toBottomOf="@id/h33" />
 
     <ImageView
-        android:id="@+id/v34"
+        android:id="@+id/v24"
         android:layout_marginStart="55dp"
         android:layout_width="5dp"
         android:layout_height="60dp"
         android:src="@drawable/vertical_dotted"
-        app:layout_constraintLeft_toRightOf="@id/v33"
+        app:layout_constraintLeft_toRightOf="@id/v23"
         app:layout_constraintTop_toBottomOf="@id/h33" />
 
-
     <ImageView
-        android:id="@+id/h40"
+        android:id="@+id/h20"
         android:layout_marginStart="30dp"
         android:layout_width="60dp"
         android:layout_height="5dp"
@@ -362,35 +189,208 @@
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/v30" />
+        app:layout_constraintTop_toBottomOf="@+id/v20" />
 
     <ImageView
-        android:id="@+id/h41"
+        android:id="@+id/h21"
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h40"
-        app:layout_constraintTop_toBottomOf="@+id/v31" />
+        app:layout_constraintLeft_toRightOf="@+id/h20"
+        app:layout_constraintTop_toBottomOf="@+id/v21" />
 
     <ImageView
-        android:id="@+id/h42"
+        android:id="@+id/h22"
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h41"
-        app:layout_constraintTop_toBottomOf="@+id/v32" />
+        app:layout_constraintLeft_toRightOf="@+id/h21"
+        app:layout_constraintTop_toBottomOf="@+id/v22" />
 
     <ImageView
-        android:id="@+id/h43"
+        android:id="@+id/h23"
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
         android:onClick="h1Clicked"
         android:src="@drawable/horizontal_dotted"
-        app:layout_constraintLeft_toRightOf="@+id/h42"
-        app:layout_constraintTop_toBottomOf="@+id/v33" />
+        app:layout_constraintLeft_toRightOf="@+id/h22"
+        app:layout_constraintTop_toBottomOf="@+id/v23" />
+
+    <ImageView
+        android:id="@+id/v10"
+        android:layout_marginStart="30dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h20" />
+
+    <ImageView
+        android:id="@+id/v11"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/v10"
+        app:layout_constraintTop_toBottomOf="@id/h21" />
+
+    <ImageView
+        android:id="@+id/v12"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@id/v11"
+        app:layout_constraintTop_toBottomOf="@id/h22" />
+
+    <ImageView
+        android:id="@+id/v13"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@id/v12"
+        app:layout_constraintTop_toBottomOf="@id/h23" />
+
+    <ImageView
+        android:id="@+id/v14"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@id/v13"
+        app:layout_constraintTop_toBottomOf="@id/h23" />
+
+    <ImageView
+        android:id="@+id/h10"
+        android:layout_marginStart="30dp"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v10" />
+
+    <ImageView
+        android:id="@+id/h11"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/h10"
+        app:layout_constraintTop_toBottomOf="@+id/v11" />
+
+    <ImageView
+        android:id="@+id/h12"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/h11"
+        app:layout_constraintTop_toBottomOf="@+id/v12" />
+
+    <ImageView
+        android:id="@+id/h13"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/h12"
+        app:layout_constraintTop_toBottomOf="@+id/v13" />
+
+    <ImageView
+        android:id="@+id/v00"
+        android:layout_marginStart="30dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h10" />
+
+    <ImageView
+        android:id="@+id/v01"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/v00"
+        app:layout_constraintTop_toBottomOf="@id/h11" />
+
+    <ImageView
+        android:id="@+id/v02"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@id/v01"
+        app:layout_constraintTop_toBottomOf="@id/h12" />
+
+    <ImageView
+        android:id="@+id/v03"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@id/v02"
+        app:layout_constraintTop_toBottomOf="@id/h13" />
+
+    <ImageView
+        android:id="@+id/v04"
+        android:layout_marginStart="55dp"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vertical_dotted"
+        app:layout_constraintLeft_toRightOf="@id/v03"
+        app:layout_constraintTop_toBottomOf="@id/h13" />
+
+
+    <ImageView
+        android:id="@+id/h00"
+        android:layout_marginStart="30dp"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v00" />
+
+    <ImageView
+        android:id="@+id/h01"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/h00"
+        app:layout_constraintTop_toBottomOf="@+id/v01" />
+
+    <ImageView
+        android:id="@+id/h02"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/h01"
+        app:layout_constraintTop_toBottomOf="@+id/v02" />
+
+    <ImageView
+        android:id="@+id/h03"
+        android:layout_width="60dp"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:onClick="h1Clicked"
+        android:src="@drawable/horizontal_dotted"
+        app:layout_constraintLeft_toRightOf="@+id/h02"
+        app:layout_constraintTop_toBottomOf="@+id/v03" />
 </androidx.constraintlayout.widget.ConstraintLayout>
