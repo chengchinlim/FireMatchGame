@@ -1,11 +1,13 @@
 package com.firematchesgame
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.model.Firematch
+import com.model.Singleton
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.collections.ArrayList
@@ -15,8 +17,8 @@ class MainActivity : AppCompatActivity() {
 
     private val tag = "Main_Activity"
 
-//    var coord_Firematches = HashMap<ArrayList<Int>, Firematch>()
-    var firematches = ArrayList<Firematch>()
+
+    private val singleton = Singleton.instance
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,68 +47,68 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "h4 is clicked", Toast.LENGTH_SHORT).show()
     }
 
-    private fun setup()  {
-        firematches.add(Firematch(m00))
-        firematches.add(Firematch(m01))
-        firematches.add(Firematch(m02))
-        firematches.add(Firematch(m03))
+    fun setup()  {
+        singleton.firematches!!.add(Firematch(m00))
+        singleton.firematches!!.add(Firematch(m01))
+        singleton.firematches!!.add(Firematch(m02))
+        singleton.firematches!!.add(Firematch(m03))
 
-        firematches.add(Firematch(m10))
-        firematches.add(Firematch(m11))
-        firematches.add(Firematch(m12))
-        firematches.add(Firematch(m13))
-        firematches.add(Firematch(m14))
-
-        firematches.add(Firematch(m20))
-        firematches.add(Firematch(m21))
-        firematches.add(Firematch(m22))
-        firematches.add(Firematch(m23))
-
-        firematches.add(Firematch(m30))
-        firematches.add(Firematch(m31))
-        firematches.add(Firematch(m32))
-        firematches.add(Firematch(m33))
-        firematches.add(Firematch(m34))
-
-        firematches.add(Firematch(m40))
-        firematches.add(Firematch(m41))
-        firematches.add(Firematch(m42))
-        firematches.add(Firematch(m43))
-
-        firematches.add(Firematch(m50))
-        firematches.add(Firematch(m51))
-        firematches.add(Firematch(m52))
-        firematches.add(Firematch(m53))
-        firematches.add(Firematch(m54))
-
-        firematches.add(Firematch(m60))
-        firematches.add(Firematch(m61))
-        firematches.add(Firematch(m62))
-        firematches.add(Firematch(m63))
-
-        firematches.add(Firematch(m70))
-        firematches.add(Firematch(m71))
-        firematches.add(Firematch(m72))
-        firematches.add(Firematch(m73))
-        firematches.add(Firematch(m74))
-
-        firematches.add(Firematch(m80))
-        firematches.add(Firematch(m81))
-        firematches.add(Firematch(m82))
-        firematches.add(Firematch(m83))
+//        firematches.add(Firematch(m10))
+//        firematches.add(Firematch(m11))
+//        firematches.add(Firematch(m12))
+//        firematches.add(Firematch(m13))
+//        firematches.add(Firematch(m14))
+//
+//        firematches.add(Firematch(m20))
+//        firematches.add(Firematch(m21))
+//        firematches.add(Firematch(m22))
+//        firematches.add(Firematch(m23))
+//
+//        firematches.add(Firematch(m30))
+//        firematches.add(Firematch(m31))
+//        firematches.add(Firematch(m32))
+//        firematches.add(Firematch(m33))
+//        firematches.add(Firematch(m34))
+//
+//        firematches.add(Firematch(m40))
+//        firematches.add(Firematch(m41))
+//        firematches.add(Firematch(m42))
+//        firematches.add(Firematch(m43))
+//
+//        firematches.add(Firematch(m50))
+//        firematches.add(Firematch(m51))
+//        firematches.add(Firematch(m52))
+//        firematches.add(Firematch(m53))
+//        firematches.add(Firematch(m54))
+//
+//        firematches.add(Firematch(m60))
+//        firematches.add(Firematch(m61))
+//        firematches.add(Firematch(m62))
+//        firematches.add(Firematch(m63))
+//
+//        firematches.add(Firematch(m70))
+//        firematches.add(Firematch(m71))
+//        firematches.add(Firematch(m72))
+//        firematches.add(Firematch(m73))
+//        firematches.add(Firematch(m74))
+//
+//        firematches.add(Firematch(m80))
+//        firematches.add(Firematch(m81))
+//        firematches.add(Firematch(m82))
+//        firematches.add(Firematch(m83))
 
         var count = 0
-        for (x in 0 until 9) {
+        for (x in 0 until 1) {
             if (x % 2 == 0) {
                 for (y in 0 until 4) {
-                    firematches[count].xCoord = x
-                    firematches[count].yCoord = y
+                    singleton.firematches!![count].xCoord = x
+                    singleton.firematches!![count].yCoord = y
                     count++
                 }
             } else {
                 for (y in 0 until 5) {
-                    firematches[count].xCoord = x
-                    firematches[count].yCoord = y
+                    singleton.firematches!![count].xCoord = x
+                    singleton.firematches!![count].yCoord = y
                     count++
                 }
             }
@@ -114,10 +116,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        for (firematch in firematches) {
-            Log.d(tag, "x: ${firematch.xCoord} y: ${firematch.yCoord}")
+        for (firematch in singleton.firematches!!) {
+            Log.d(tag, "x is ${firematch.xCoord} y is ${firematch.yCoord}")
         }
 
+        val intent = Intent(this, NextActivity::class.java)
+        startActivity(intent)
     }
 
     private fun getNeighbors() {
