@@ -347,6 +347,7 @@
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
+        android:onClick="m00Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/m10" />
@@ -356,6 +357,7 @@
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
+        android:onClick="m01Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m00"
         app:layout_constraintTop_toBottomOf="@+id/m11" />
@@ -365,6 +367,7 @@
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
+        android:onClick="m02Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m01"
         app:layout_constraintTop_toBottomOf="@+id/m12" />
@@ -374,6 +377,7 @@
         android:layout_width="60dp"
         android:layout_height="5dp"
         android:layerType="software"
+        android:onClick="m03Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m02"
         app:layout_constraintTop_toBottomOf="@+id/m13" />
