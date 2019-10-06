@@ -1,7 +1,7 @@
 package com.model
 
 class Singleton private constructor(){
-    var firematches: ArrayList<Firematch>? = null
+    var firematches: ArrayList<List<Firematch>>? = null
     init {
         firematches = ArrayList()
     }
