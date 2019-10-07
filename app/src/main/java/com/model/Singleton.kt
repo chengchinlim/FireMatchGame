@@ -1,9 +1,9 @@
 package com.model
 
 class Singleton private constructor(){
-    var firematches: ArrayList<List<Firematch>>? = null
+    var fireMatchesList: ArrayList<List<FireMatch>>? = null
     init {
-        firematches = ArrayList()
+        fireMatchesList = ArrayList()
     }
 
     companion object {
