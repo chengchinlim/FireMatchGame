@@ -3,8 +3,11 @@ package com.firematchesgame
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.model.FireMatch
 import com.model.Singleton
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     private val tag = "Main_Activity"
 
     private val singleton = Singleton.instance
+    private var screenHeightPixels = 0
+    private var screenWidthPixels = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +27,12 @@ class MainActivity : AppCompatActivity() {
         setXY()
 
         val display = resources.displayMetrics
-        Log.d(tag, "Width: " +  display.widthPixels) // 1080
-        Log.d(tag, "Height: " + display.heightPixels) // 1998
+        Log.d(tag, "Width: " +  display.widthPixels) // 1080 = 320dp
+        Log.d(tag, "Height: " + display.heightPixels) // 1998 = 592dp
+        screenWidthPixels = display.widthPixels
+        screenHeightPixels = display.heightPixels
+
+
 
         // testing
 //        val horizontalNeighbors = getHorizontalNeighbors(singleton.fireMatchesList!![2][1])
@@ -33,6 +42,58 @@ class MainActivity : AppCompatActivity() {
 //        for (neighbor in horizontalNeighbors) {
 //            Log.d(tag, "x is ${neighbor.xCoord} y is ${neighbor.yCoord}")
 //        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        setImageViewSize(m80, 18.75f, 0.84f)
+        setImageViewMargin(m80, 9.38f, 8.45f)
+        setImageViewSize(m81, 18.75f, 0.84f)
+        setImageViewMargin(m81, 0f, 8.45f)
+        setImageViewSize(m82, 18.75f, 0.84f)
+        setImageViewMargin(m82, 0f, 8.45f)
+        setImageViewSize(m83, 18.75f, 0.84f)
+        setImageViewMargin(m83, 0f, 8.45f)
+
+        setImageViewSize(m70, 1.28f, 10.14f)
+        setImageViewMargin(m70, 9.38f, 0f)
+        setImageViewSize(m71, 1.28f, 10.14f)
+        setImageViewMargin(m71, 17.19f, 0f)
+        setImageViewSize(m72, 1.28f, 10.14f)
+        setImageViewMargin(m72, 17.19f, 0f)
+        setImageViewSize(m73, 1.28f, 10.14f)
+        setImageViewMargin(m73, 17.19f, 0f)
+        setImageViewSize(m74, 1.28f, 10.14f)
+        setImageViewMargin(m74, 17.19f, 0f)
+
+        setImageViewSize(m60, 18.75f, 0.84f)
+        setImageViewMargin(m60, 9.38f, 0f)
+        setImageViewSize(m61, 18.75f, 0.84f)
+        setImageViewSize(m62, 18.75f, 0.84f)
+        setImageViewSize(m63, 18.75f, 0.84f)
+
+    }
+
+    private fun setImageViewSize(iv: ImageView, widthPercent: Float, heightPercent: Float) {
+        if (widthPercent != -1f) {
+            iv.layoutParams.width = percentToPixels(screenWidthPixels, widthPercent)
+        }
+        if (heightPercent != -1f) {
+            iv.layoutParams.height = percentToPixels(screenHeightPixels, heightPercent)
+        }
+    }
+
+    private fun setImageViewMargin(iv: ImageView, leftMarginPercent: Float, topMarginPercent: Float) {
+        val leftMargin = percentToPixels(screenWidthPixels, leftMarginPercent)
+        val topMargin = percentToPixels(screenHeightPixels, topMarginPercent)
+        val param = iv.layoutParams as ConstraintLayout.LayoutParams
+        param.leftMargin = leftMargin
+        param.topMargin = topMargin
+        iv.layoutParams = param
+    }
+
+    private fun percentToPixels(screenPixels: Int, percent: Float): Int {
+        return (screenPixels * percent / 100).toInt()
     }
 
     fun m80Clicked(view: View) {
