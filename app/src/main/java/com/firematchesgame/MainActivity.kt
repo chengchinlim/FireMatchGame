@@ -72,6 +72,57 @@ class MainActivity : AppCompatActivity() {
         setImageViewSize(m62, 18.75f, 0.84f)
         setImageViewSize(m63, 18.75f, 0.84f)
 
+        setImageViewSize(m50, 1.28f, 10.14f)
+        setImageViewMargin(m50, 9.38f, 0f)
+        setImageViewSize(m51, 1.28f, 10.14f)
+        setImageViewMargin(m51, 17.19f, 0f)
+        setImageViewSize(m52, 1.28f, 10.14f)
+        setImageViewMargin(m52, 17.19f, 0f)
+        setImageViewSize(m53, 1.28f, 10.14f)
+        setImageViewMargin(m53, 17.19f, 0f)
+        setImageViewSize(m54, 1.28f, 10.14f)
+        setImageViewMargin(m54, 17.19f, 0f)
+
+        setImageViewSize(m40, 18.75f, 0.84f)
+        setImageViewMargin(m40, 9.38f, 0f)
+        setImageViewSize(m41, 18.75f, 0.84f)
+        setImageViewSize(m42, 18.75f, 0.84f)
+        setImageViewSize(m43, 18.75f, 0.84f)
+
+        setImageViewSize(m30, 1.28f, 10.14f)
+        setImageViewMargin(m30, 9.38f, 0f)
+        setImageViewSize(m31, 1.28f, 10.14f)
+        setImageViewMargin(m31, 17.19f, 0f)
+        setImageViewSize(m32, 1.28f, 10.14f)
+        setImageViewMargin(m32, 17.19f, 0f)
+        setImageViewSize(m33, 1.28f, 10.14f)
+        setImageViewMargin(m33, 17.19f, 0f)
+        setImageViewSize(m34, 1.28f, 10.14f)
+        setImageViewMargin(m34, 17.19f, 0f)
+
+        setImageViewSize(m20, 18.75f, 0.84f)
+        setImageViewMargin(m20, 9.38f, 0f)
+        setImageViewSize(m21, 18.75f, 0.84f)
+        setImageViewSize(m22, 18.75f, 0.84f)
+        setImageViewSize(m23, 18.75f, 0.84f)
+
+        setImageViewSize(m10, 1.28f, 10.14f)
+        setImageViewMargin(m10, 9.38f, 0f)
+        setImageViewSize(m11, 1.28f, 10.14f)
+        setImageViewMargin(m11, 17.19f, 0f)
+        setImageViewSize(m12, 1.28f, 10.14f)
+        setImageViewMargin(m12, 17.19f, 0f)
+        setImageViewSize(m13, 1.28f, 10.14f)
+        setImageViewMargin(m13, 17.19f, 0f)
+        setImageViewSize(m14, 1.28f, 10.14f)
+        setImageViewMargin(m14, 17.19f, 0f)
+
+        setImageViewSize(m00, 18.75f, 0.84f)
+        setImageViewMargin(m00, 9.38f, 0f)
+        setImageViewSize(m01, 18.75f, 0.84f)
+        setImageViewSize(m02, 18.75f, 0.84f)
+        setImageViewSize(m03, 18.75f, 0.84f)
+
     }
 
     private fun setImageViewSize(iv: ImageView, widthPercent: Float, heightPercent: Float) {
