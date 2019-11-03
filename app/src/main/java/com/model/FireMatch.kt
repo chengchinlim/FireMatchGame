@@ -2,11 +2,14 @@ package com.model
 
 import android.widget.ImageView
 
-class FireMatch(i: ImageView) {
-    var xCoord = 0
-    var yCoord = 0
+class FireMatch() {
+    var rowNo = 0
+    var colNo = 0
     var clickable = true
     var alreadyClicked = false
-    var imageView = i
+    var imageView: ImageView? = null
 
+    constructor(i: ImageView): this() {
+        imageView = i
+    }
 }
