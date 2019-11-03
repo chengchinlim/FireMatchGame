@@ -1,0 +1,83 @@
+//        var list = ArrayList<FireMatch>()
+//        list.add(FireMatch(m00))
+//        list.add(FireMatch(m01))
+//        list.add(FireMatch(m02))
+//        list.add(FireMatch(m03))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m10))
+//        list.add(FireMatch(m11))
+//        list.add(FireMatch(m12))
+//        list.add(FireMatch(m13))
+//        list.add(FireMatch(m14))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m20))
+//        list.add(FireMatch(m21))
+//        list.add(FireMatch(m22))
+//        list.add(FireMatch(m23))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m30))
+//        list.add(FireMatch(m31))
+//        list.add(FireMatch(m32))
+//        list.add(FireMatch(m33))
+//        list.add(FireMatch(m34))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m40))
+//        list.add(FireMatch(m41))
+//        list.add(FireMatch(m42))
+//        list.add(FireMatch(m43))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m50))
+//        list.add(FireMatch(m51))
+//        list.add(FireMatch(m52))
+//        list.add(FireMatch(m53))
+//        list.add(FireMatch(m54))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m60))
+//        list.add(FireMatch(m61))
+//        list.add(FireMatch(m62))
+//        list.add(FireMatch(m63))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m70))
+//        list.add(FireMatch(m71))
+//        list.add(FireMatch(m72))
+//        list.add(FireMatch(m73))
+//        list.add(FireMatch(m74))
+//        singleton.fireMatchesList!!.add(list)
+//
+//        list = ArrayList()
+//        list.add(FireMatch(m80))
+//        list.add(FireMatch(m81))
+//        list.add(FireMatch(m82))
+//        list.add(FireMatch(m83))
+//        singleton.fireMatchesList!!.add(list)
+//
+//
+//        for ((row, fireMatchesList) in singleton.fireMatchesList!!.withIndex()) {
+//            for ((col, fireMatch) in fireMatchesList.withIndex()) {
+//                fireMatch.rowNo = row
+//                fireMatch.colNo = col
+//            }
+//        }
+
+//        for (fireMatchList in singleton.fireMatchesList!!) { // testing
+//            for (fireMatch in fireMatchList) {
+//                Log.d(tag, "x is ${fireMatch.rowNo} y is ${fireMatch.colNo}")
+//            }
+//        }
+//
+//        val intent = Intent(this, NextActivity::class.java)
+//        startActivity(intent)

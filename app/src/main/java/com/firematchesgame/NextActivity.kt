@@ -14,9 +14,9 @@ class NextActivity : AppCompatActivity() {
         setContentView(R.layout.activity_next)
 
 //        val singleton = Singleton.instance // singleton works
-//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].xCoord} y is ${singleton.fireMatchesList!![0].yCoord}")
-//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].xCoord} y is ${singleton.fireMatchesList!![1].yCoord}")
-//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].xCoord} y is ${singleton.fireMatchesList!![2].yCoord}")
-//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].xCoord} y is ${singleton.fireMatchesList!![3].yCoord}")
+//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].rowNo} y is ${singleton.fireMatchesList!![0].colNo}")
+//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].rowNo} y is ${singleton.fireMatchesList!![1].colNo}")
+//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].rowNo} y is ${singleton.fireMatchesList!![2].colNo}")
+//        Log.d(tag, "x is ${singleton.fireMatchesList!![0].rowNo} y is ${singleton.fireMatchesList!![3].colNo}")
     }
 }
