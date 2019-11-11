@@ -11,7 +11,7 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="50dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m80Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -22,7 +22,7 @@
         android:id="@+id/m81"
         android:layout_marginTop="50dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m81Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -33,7 +33,7 @@
         android:id="@+id/m82"
         android:layout_marginTop="50dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m82Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -45,7 +45,7 @@
         android:id="@+id/m83"
         android:layout_marginTop="50dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m83Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -55,45 +55,50 @@
 
     <ImageView
         android:id="@+id/m70"
-        android:layout_marginStart="35dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m70Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/m80" />
 
     <ImageView
         android:id="@+id/m71"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m71Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m70"
         app:layout_constraintTop_toBottomOf="@id/m81" />
 
     <ImageView
         android:id="@+id/m72"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m72Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m71"
         app:layout_constraintTop_toBottomOf="@id/m82" />
 
     <ImageView
         android:id="@+id/m73"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m73Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m72"
         app:layout_constraintTop_toBottomOf="@id/m83" />
 
     <ImageView
         android:id="@+id/m74"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m74Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m73"
         app:layout_constraintTop_toBottomOf="@id/m83" />
@@ -102,8 +107,9 @@
         android:id="@+id/m60"
         android:layout_marginStart="35dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m60Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/m70" />
@@ -111,8 +117,9 @@
     <ImageView
         android:id="@+id/m61"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m61Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m60"
         app:layout_constraintTop_toBottomOf="@+id/m71" />
@@ -120,8 +127,9 @@
     <ImageView
         android:id="@+id/m62"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m62Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m61"
         app:layout_constraintTop_toBottomOf="@+id/m72" />
@@ -129,53 +137,59 @@
     <ImageView
         android:id="@+id/m63"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m63Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m62"
         app:layout_constraintTop_toBottomOf="@+id/m73" />
 
     <ImageView
         android:id="@+id/m50"
-        android:layout_marginStart="35dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m50Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/m60" />
 
     <ImageView
         android:id="@+id/m51"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m51Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m50"
         app:layout_constraintTop_toBottomOf="@id/m61" />
 
     <ImageView
         android:id="@+id/m52"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m52Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m51"
         app:layout_constraintTop_toBottomOf="@id/m62" />
 
     <ImageView
         android:id="@+id/m53"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m53Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m52"
         app:layout_constraintTop_toBottomOf="@id/m63" />
 
     <ImageView
         android:id="@+id/m54"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m54Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m53"
         app:layout_constraintTop_toBottomOf="@id/m63" />
@@ -184,8 +198,9 @@
         android:id="@+id/m40"
         android:layout_marginStart="35dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m40Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/m50" />
@@ -193,8 +208,9 @@
     <ImageView
         android:id="@+id/m41"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m41Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m40"
         app:layout_constraintTop_toBottomOf="@+id/m51" />
@@ -202,8 +218,9 @@
     <ImageView
         android:id="@+id/m42"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m42Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m41"
         app:layout_constraintTop_toBottomOf="@+id/m52" />
@@ -211,53 +228,59 @@
     <ImageView
         android:id="@+id/m43"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m43Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m42"
         app:layout_constraintTop_toBottomOf="@+id/m53" />
 
     <ImageView
         android:id="@+id/m30"
-        android:layout_marginStart="35dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m30Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/m40" />
 
     <ImageView
         android:id="@+id/m31"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m31Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m30"
         app:layout_constraintTop_toBottomOf="@id/m41" />
 
     <ImageView
         android:id="@+id/m32"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m32Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m31"
         app:layout_constraintTop_toBottomOf="@id/m42" />
 
     <ImageView
         android:id="@+id/m33"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m33Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m32"
         app:layout_constraintTop_toBottomOf="@id/m43" />
 
     <ImageView
         android:id="@+id/m34"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m34Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m33"
         app:layout_constraintTop_toBottomOf="@id/m43" />
@@ -266,8 +289,9 @@
         android:id="@+id/m20"
         android:layout_marginStart="35dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m20Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/m30" />
@@ -275,8 +299,9 @@
     <ImageView
         android:id="@+id/m21"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m21Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m20"
         app:layout_constraintTop_toBottomOf="@+id/m31" />
@@ -284,8 +309,9 @@
     <ImageView
         android:id="@+id/m22"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m22Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m21"
         app:layout_constraintTop_toBottomOf="@+id/m32" />
@@ -293,53 +319,59 @@
     <ImageView
         android:id="@+id/m23"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
+        android:onClick="m23Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m22"
         app:layout_constraintTop_toBottomOf="@+id/m33" />
 
     <ImageView
         android:id="@+id/m10"
-        android:layout_marginStart="35dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m10Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/m20" />
 
     <ImageView
         android:id="@+id/m11"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m11Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m10"
         app:layout_constraintTop_toBottomOf="@id/m21" />
 
     <ImageView
         android:id="@+id/m12"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m12Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m11"
         app:layout_constraintTop_toBottomOf="@id/m22" />
 
     <ImageView
         android:id="@+id/m13"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m13Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m12"
         app:layout_constraintTop_toBottomOf="@id/m23" />
 
     <ImageView
         android:id="@+id/m14"
-        android:layout_marginStart="55dp"
-        android:layout_width="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="15dp"
         android:layout_height="60dp"
+        android:onClick="m14Clicked"
         android:src="@drawable/vertical_dotted"
         app:layout_constraintLeft_toRightOf="@id/m13"
         app:layout_constraintTop_toBottomOf="@id/m23" />
@@ -349,7 +381,7 @@
         android:id="@+id/m00"
         android:layout_marginStart="35dp"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m00Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -359,7 +391,7 @@
     <ImageView
         android:id="@+id/m01"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m01Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -369,7 +401,7 @@
     <ImageView
         android:id="@+id/m02"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m02Clicked"
         android:src="@drawable/horizontal_dotted"
@@ -379,10 +411,43 @@
     <ImageView
         android:id="@+id/m03"
         android:layout_width="60dp"
-        android:layout_height="5dp"
+        android:layout_height="15dp"
         android:layerType="software"
         android:onClick="m03Clicked"
         android:src="@drawable/horizontal_dotted"
         app:layout_constraintLeft_toRightOf="@+id/m02"
         app:layout_constraintTop_toBottomOf="@+id/m13" />
+
+    <Button
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onHelpClicked"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/help" />
+
+    <Button
+        android:id="@+id/restart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onRestartClicked"
+        app:layout_constraintTop_toBottomOf="@id/m00"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/restart" />
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

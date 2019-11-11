@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FireMatch Game</string>
+    <string name="restart">Restart</string>
+    <string name="restart_text">Are you sure you want to restart game?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="help">Help</string>
+    <string name="step1">To start the game -> press on ANY black dotted lines</string>
+    <string name="step2">BLUE dotted line = the path you can choose for your next move</string>
+    <string name="step3">RED line = path that is already chosen</string>
+    <string name="step4">No BLUE dotted line on the board = Player this turn lost the game</string>
+    <string name="ok">Ok</string>
 </resources>
